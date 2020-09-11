@@ -1,0 +1,178 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+/* mousemove*/
+
+canvas{
+    background-image: url(../images/csgo4.jpg)
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* figur billeder */
+
+#figurbilleder {
+background-color:black;
+text-align: center;
+width:100%;
+}
+
+
+#figurbilleder img {
+width: 450px;
+padding: 40px;
+
+}
+
+
+
+/*FOOTER START*/
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ft-overskrift {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+
+/*sticky footer i bunden af siden*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container-footer {
+    flex: 1;
+    /* same as flex-grow: 1; */
+}
+
+/*responsiv flex*/
+
+.ft-main {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-main-tekst {
+    padding: 15px;
+    min-width: 20px;
+    /*200px*/
+    ;
+}
+
+@media only screen and (min-width: 477px) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+
+/*style kontaktformular til nyhedsbrev*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    background-color: darkred;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+/*style sociale medier ikoner*/
+.ft-social {
+    padding: 10px;
+    20px;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #000 solid;
+    padding-top: 20px;
+}
+
+.ft-social-list li {
+    margin: 10px;
+}
+
+/*style legal/copyrigth footer */
+.ft-legal {
+    padding: 10px;
+    10px;
+    background-color: #000;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin: 5px;
+    5px;
+    white-space: nowrap;
+}
+
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+    /* same as flex-grow: 1; */
+}
+
+
+/*FOOTER SLUT */
